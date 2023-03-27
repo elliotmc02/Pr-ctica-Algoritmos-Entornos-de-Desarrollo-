@@ -7,4 +7,12 @@ public abstract class algoritmos {
 			return numero;
 		return fibonacci(numero - 1) + fibonacci(numero - 2);
 	}
+
+	public double factorial(int numero) {
+		double res = 1;
+		for (int i = 1; i <= numero; i++) {
+			res = res * i;
+		}
+		return res;
+	}
 }
