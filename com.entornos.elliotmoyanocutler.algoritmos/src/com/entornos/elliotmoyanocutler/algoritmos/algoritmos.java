@@ -3,9 +3,13 @@ package com.entornos.elliotmoyanocutler.algoritmos;
 public abstract class algoritmos {
 
 	public int fibonacci(int numero) {
-		if (numero < 2)
-			return numero;
-		return fibonacci(numero - 1) + fibonacci(numero - 2);
+		int siguiente = 1, actual = 0, temporal = 0;
+		for (int i = 1; i <= numero; i++) {
+			temporal = actual;
+			actual = siguiente;
+			siguiente = siguiente + temporal;
+		}
+		return actual;
 	}
 
 	public double factorial(int numero) {
