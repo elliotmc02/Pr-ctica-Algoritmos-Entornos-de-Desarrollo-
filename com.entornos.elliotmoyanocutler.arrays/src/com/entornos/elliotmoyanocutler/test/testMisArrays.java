@@ -34,5 +34,11 @@ class testMisArrays {
 		assertEquals(8, MisArrays.mediana(array2));
 		assertEquals(8, MisArrays.mediana(array3));
 	}
+	@Test
+	void testMaximo() {
+		assertEquals(5, MisArrays.maximo(array1));
+		assertEquals(10, MisArrays.maximo(array2));
+		assertEquals(9, MisArrays.maximo(array3));
+	}
 
 }

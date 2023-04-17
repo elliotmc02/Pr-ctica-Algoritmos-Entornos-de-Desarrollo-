@@ -40,4 +40,20 @@ public abstract class MisArrays {
         }
         return mediana;
     }
+	
+	/**
+	 * Metodo para calcular el maximo numero del array, recibe un array de numeros enteros y devuelve el maximo
+	 * @param array[] el array introducido
+	 * @return el maximo
+	 */
+	
+	public static int maximo(int[] array) {
+		int maximo = Integer.MIN_VALUE;
+		for (int nums: array) {
+			if (nums > maximo) {
+				maximo = nums;
+			}
+		}
+		return maximo;
+	}
 }
