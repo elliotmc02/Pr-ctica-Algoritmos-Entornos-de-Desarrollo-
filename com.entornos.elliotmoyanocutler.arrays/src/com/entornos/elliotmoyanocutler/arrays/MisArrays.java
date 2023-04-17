@@ -24,5 +24,20 @@ public abstract class MisArrays {
 		}
 		return media / array.length;
 	}
-
+	
+	/**
+	 * Metodo para calcular la mediana, recibe un array de numeros enteros y devuelve la mediana del array
+	 * 
+	 * @param array[] el array introducido
+	 * @return la mediana del array
+	 */
+	public static double mediana(int[] array){
+        double mediana;
+        if(array.length % 2 == 0){
+            mediana = (array[(array.length / 2) - 1] + array[(array.length / 2)]) / 2; 
+        } else {
+            mediana = array[array.length / 2];
+        }
+        return mediana;
+    }
 }

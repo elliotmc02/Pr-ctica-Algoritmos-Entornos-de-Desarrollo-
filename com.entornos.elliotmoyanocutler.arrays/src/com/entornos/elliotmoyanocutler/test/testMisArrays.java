@@ -28,5 +28,11 @@ class testMisArrays {
 		assertEquals(6, Math.round(MisArrays.media(array2)));
 		assertEquals(5, Math.round(MisArrays.media(array3)));
 	}
+	@Test
+	void testMediana() {
+		assertEquals(5, MisArrays.mediana(array1));
+		assertEquals(8, MisArrays.mediana(array2));
+		assertEquals(8, MisArrays.mediana(array3));
+	}
 
 }
