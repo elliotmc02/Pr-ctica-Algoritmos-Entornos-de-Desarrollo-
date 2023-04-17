@@ -59,14 +59,15 @@ public abstract class MisArrays {
 		}
 		return maximo;
 	}
-	
+
 	/**
 	 * Metodo para calcular el minimo numero del array, recibe un array de numeros
 	 * enteros y devuelve el minimo
+	 * 
 	 * @param array[] el array introducido
 	 * @return el minimo
 	 */
-	
+
 	public static int minimo(int[] array) {
 		int minimo = Integer.MAX_VALUE;
 		for (int nums : array) {
